@@ -1,0 +1,200 @@
+@layer reset, demo, base, template-tokens, new-tokens;
+
+@layer template-tokens {
+  @property --black {
+    syntax        : '<color>';
+    inherits      : false;
+    initial-value : #000000;
+  }
+  @property --grey {
+    syntax        : '<color>';
+    inherits      : false;
+    initial-value : #6A6A6A;
+  }
+  @property --light-grey {
+    syntax        : '<color>';
+    inherits      : false;
+    initial-value : #D9D9D9;
+  }
+  @property --white {
+    syntax        : '<color>';
+    inherits      : false;
+    initial-value : #FFFFFF;
+  }
+  @property --blue {
+    syntax        : '<color>';
+    inherits      : false;
+    initial-value : #0000FF;
+  }
+  @property --100 {
+    syntax        : '*';
+    inherits      : false;
+    initial-value : 0.5rem;
+  }
+  
+  :root {
+    --color-text-content-prominent   : var(--black, #000000);
+    --color-text-content             : var(--grey, #6A6A6A);
+    --color-text-content-on-color    : var(--white, #FFFFFF);
+    --color-background-brand         : var(--black, #000000);
+    --color-background-layer-element : var(--white, #FFFFFF);
+    --color-background-layer-body    : var(--white, #FFFFFF);
+    --color-border                   : var(--light-grey, #D9D9D9);
+    --color-text-link                : var(--blue, #0000FF);
+    --component-input-border         : var(--light-grey, #D9D9D9);
+  }
+  
+  :root {
+    --input-radius : var(--100, 0.5rem);
+  }
+}
+
+@layer base {
+  :root {
+    --component-button-radius : 0.5rem;
+    --component-input-radius  : 0.5rem;
+    --component-button-border : var(--light-grey);
+  }
+  
+  .header {
+    text-align : center;
+  }
+  
+  .title {
+    font-size     : 2rem;
+    margin-bottom : 0.25rem;
+    color         : var(--color-text-content-prominent);
+    line-height   : 1.3;
+  }
+  
+  .form {
+    display : grid;
+    gap     : 1rem;
+  }
+  
+  .input-element {
+    display        : flex;
+    flex-direction : column;
+    gap            : 0.5rem;
+  }
+  
+  .input-element .label {
+    color : var(--color-text-content-prominent);
+  }
+  
+  .input-element .field {
+    padding          : 0.75rem 1rem;
+    border           : 1px solid var(--component-input-border);
+    border-radius    : var(--component-button-radius);
+    background-color : var(--color-background-layer-element);
+  }
+  
+  .button {
+    all              : unset;
+    box-sizing       : inherit;
+    display          : inline-flex;
+    align-items      : center;
+    justify-content  : center;
+    gap              : 0.25rem;
+    padding          : 0.75rem 1rem;
+    font-weight      : 500;
+    color            : var(--color-text-content-on-color);
+    background-color : var(--color-background-brand);
+    border-radius    : var(--component-button-radius);
+    width            : 100%;
+    cursor           : pointer;
+  }
+  
+  .button .icon {
+    width  : 1rem;
+    height : 1rem;
+  }
+  
+  .button.alternative {
+    background-color : var(--color-background-layer-element);
+    color            : var(--color-text-content);
+    border           : 1px solid var(--component-button-border);
+  }
+  
+  .divider {
+    display     : flex;
+    align-items : center;
+    gap         : 0.5rem;
+    font-size   : 0.85rem;
+  }
+  
+  .divider::before, .divider::after {
+    content          : '';
+    display          : block;
+    height           : 1px;
+    width            : 100%;
+    background-color : var(--color-border);
+  }
+  
+  a {
+    color : var(--color-text-content-link);
+  }
+  
+  .footer {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    gap             : 0.5rem;
+    font-size       : 0.85rem;
+  }
+}
+
+@layer demo {
+  .screen {
+    display          : flex;
+    flex-direction   : column;
+    gap              : 2rem;
+    width            : 380px;
+    min-height       : 640px;
+    padding          : 1.5rem 1.5rem 4rem;
+    background-color : var(--color-background-layer-body);
+    border-radius    : 0.5rem;
+  }
+  
+  .tabs {
+    display               : grid;
+    grid-template-columns : repeat(4, 1fr);
+    gap                   : 0.5rem;
+  }
+  
+  .tabs .tab {
+    color         : white;
+    padding       : 0.5rem 0;
+    border-radius : 0.25rem;
+    cursor        : pointer;
+    user-select   : none;
+    background    : transparent;
+    border        : 1px solid gray;
+  }
+  
+  .tabs .tab.is-active {
+    background-color : black;
+    border           : none;
+  }
+}
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+  }
+  
+  body {
+    min-height       : 100svh;
+    display          : grid;
+    gap              : 1rem;
+    place-content    : center;
+    background-color : #444444;
+    font-family      : 'Open Sans', sans-serif;
+    color            : var(--color-text-content);
+  }
+}
