@@ -3,16 +3,16 @@
  */
 
 :root {
-  --text-default: #484848;
-  --text-accent: #000000;
-  --text-brand: #da0663;
+  --text-default: #cbcdd0;
+  --text-accent: #fefefe;
+  --text-brand: #6eb3ee;
   --text-on-color: #ffffff;
-  --text-link: #da0663;
-  --background-brand: #da0663;
-  --background-body: #f2f2f2;
-  --background-element: #ffffff;
-  --border-default: #bfbebe;
-  --border-input: #d1d1d1;
-  --border-button: #d1d1d1;
-  --radius: 0px;
+  --text-link: #6eb3ee;
+  --background-brand: #0c8ce9;
+  --background-body: #282a37;
+  --background-element: #323644;
+  --border-default: #484848;
+  --border-input: #313644;
+  --border-button: #484848;
+  --radius: 8px;
 }
