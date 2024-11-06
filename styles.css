@@ -1,61 +1,6 @@
 @layer reset, demo, base, template-tokens, new-tokens;
 
-@layer template-tokens {
-  @property --black {
-    syntax        : '<color>';
-    inherits      : false;
-    initial-value : #000000;
-  }
-  @property --grey {
-    syntax        : '<color>';
-    inherits      : false;
-    initial-value : #6A6A6A;
-  }
-  @property --light-grey {
-    syntax        : '<color>';
-    inherits      : false;
-    initial-value : #D9D9D9;
-  }
-  @property --white {
-    syntax        : '<color>';
-    inherits      : false;
-    initial-value : #FFFFFF;
-  }
-  @property --blue {
-    syntax        : '<color>';
-    inherits      : false;
-    initial-value : #0000FF;
-  }
-  @property --100 {
-    syntax        : '*';
-    inherits      : false;
-    initial-value : 0.5rem;
-  }
-  
-  :root {
-    --color-text-content-prominent   : var(--black, #000000);
-    --color-text-content             : var(--grey, #6A6A6A);
-    --color-text-content-on-color    : var(--white, #FFFFFF);
-    --color-background-brand         : var(--black, #000000);
-    --color-background-layer-element : var(--white, #FFFFFF);
-    --color-background-layer-body    : var(--white, #FFFFFF);
-    --color-border                   : var(--light-grey, #D9D9D9);
-    --color-text-link                : var(--blue, #0000FF);
-    --component-input-border         : var(--light-grey, #D9D9D9);
-  }
-  
-  :root {
-    --input-radius : var(--100, 0.5rem);
-  }
-}
-
 @layer base {
-  :root {
-    --component-button-radius : 0.5rem;
-    --component-input-radius  : 0.5rem;
-    --component-button-border : var(--light-grey);
-  }
-  
   .header {
     text-align : center;
   }
@@ -63,7 +8,7 @@
   .title {
     font-size     : 2rem;
     margin-bottom : 0.25rem;
-    color         : var(--color-text-content-prominent);
+    color         : var(--text-accent);
     line-height   : 1.3;
   }
   
@@ -79,14 +24,14 @@
   }
   
   .input-element .label {
-    color : var(--color-text-content-prominent);
+    color : var(--text-accent);
   }
   
   .input-element .field {
     padding          : 0.75rem 1rem;
-    border           : 1px solid var(--component-input-border);
-    border-radius    : var(--component-button-radius);
-    background-color : var(--color-background-layer-element);
+    border           : 1px solid var(--border-input);
+    border-radius    : var(--radius);
+    background-color : var(--background-element);
   }
   
   .button {
@@ -98,9 +43,9 @@
     gap              : 0.25rem;
     padding          : 0.75rem 1rem;
     font-weight      : 500;
-    color            : var(--color-text-content-on-color);
-    background-color : var(--color-background-brand);
-    border-radius    : var(--component-button-radius);
+    color            : var(--text-on-color);
+    background-color : var(--background-brand);
+    border-radius    : var(--radius);
     width            : 100%;
     cursor           : pointer;
   }
@@ -111,9 +56,9 @@
   }
   
   .button.alternative {
-    background-color : var(--color-background-layer-element);
-    color            : var(--color-text-content);
-    border           : 1px solid var(--component-button-border);
+    background-color : var(--background-element);
+    color            : var(--text-default);
+    border           : 1px solid var(--border-button);
   }
   
   .divider {
@@ -128,11 +73,11 @@
     display          : block;
     height           : 1px;
     width            : 100%;
-    background-color : var(--color-border);
+    background-color : var(--border-default);
   }
   
   a {
-    color : var(--color-text-content-link);
+    color : var(--text-link);
   }
   
   .footer {
@@ -153,7 +98,7 @@
     width            : 380px;
     min-height       : 640px;
     padding          : 1.5rem 1.5rem 4rem;
-    background-color : var(--color-background-layer-body);
+    background-color : var(--background-body);
     border-radius    : 0.5rem;
   }
   
@@ -195,6 +140,6 @@
     place-content    : center;
     background-color : #444444;
     font-family      : 'Open Sans', sans-serif;
-    color            : var(--color-text-content);
+    color            : var(--text-default);
   }
 }
