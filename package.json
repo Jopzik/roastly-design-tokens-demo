@@ -1,0 +1,25 @@
+{
+  "name": "headless-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tokens.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jopzik/headless-tokens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Jopzik/headless-tokens/issues"
+  },
+  "homepage": "https://github.com/Jopzik/headless-tokens#readme",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^1.2.7",
+    "style-dictionary": "^4.1.4"
+  }
+}
