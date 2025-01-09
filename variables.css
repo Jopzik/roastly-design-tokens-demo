@@ -3,16 +3,27 @@
  */
 
 :root {
-  --text-default: #cbcdd0;
-  --text-accent: #fefefe;
-  --text-brand: #6eb3ee;
-  --text-on-color: #ffffff;
-  --text-link: #6eb3ee;
-  --background-brand: #0c8ce9;
-  --background-body: #282a37;
-  --background-element: #323644;
-  --border-default: #484848;
-  --border-input: #313644;
-  --border-button: #484848;
-  --radius: 8px;
+  --color-background-brand-default: #0c8ce9;
+  --color-background-brand-hover: #0a7acb;
+  --color-background-layer-element: #323644;
+  --color-background-layer-body: #282a38;
+  --color-background-layer-surface-01-default: #000000;
+  --color-text-content-on-color: #ffffff;
+  --color-text-content-default: #cbcdd0;
+  --color-text-content-prominent: #fefefe;
+  --color-text-content-light: #78818f;
+  --color-text-content-lighter: #747474;
+  --color-text-content-brand: #6fb3ee;
+  --color-text-content-link: #6fb3ee;
+  --color-border-default: #484848;
+  --color-icon-content-prominent: #fefefe;
+  --color-icon-content-brand: #6fb3ee;
+  --color-icon-content-default: #cbcdd0;
+  --color-icon-content-light: #78818f;
+  --color-icon-content-lighter: #747474;
+  --color-icon-content-on-color: #ffffff;
+  --component-button-radius: 0.5rem;
+  --component-button-border: #484848;
+  --component-input-radius: 0.5rem;
+  --component-input-border: #323644;
 }

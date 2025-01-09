@@ -8,7 +8,7 @@
   .title {
     font-size     : 2rem;
     margin-bottom : 0.25rem;
-    color         : var(--text-accent);
+    color         : var(--color-text-content-prominent);
     line-height   : 1.3;
   }
   
@@ -24,14 +24,14 @@
   }
   
   .input-element .label {
-    color : var(--text-accent);
+    color : var(--color-text-content-prominent);
   }
   
   .input-element .field {
     padding          : 0.75rem 1rem;
-    border           : 1px solid var(--border-input);
-    border-radius    : var(--radius);
-    background-color : var(--background-element);
+    border           : 1px solid var(--component-input-border);
+    border-radius    : var(--component-input-radius);
+    background-color : var(--color-background-layer-element);
   }
   
   .button {
@@ -43,9 +43,9 @@
     gap              : 0.25rem;
     padding          : 0.75rem 1rem;
     font-weight      : 500;
-    color            : var(--text-on-color);
-    background-color : var(--background-brand);
-    border-radius    : var(--radius);
+    color            : var(--color-text-content-on-color);
+    background-color : var(--color-background-brand-default);
+    border-radius    : var(--component-button-radius);
     width            : 100%;
     cursor           : pointer;
   }
@@ -56,9 +56,9 @@
   }
   
   .button.alternative {
-    background-color : var(--background-element);
-    color            : var(--text-default);
-    border           : 1px solid var(--border-button);
+    background-color : var(--color-background-layer-element);
+    color            : var(--color-text-content-default);
+    border           : 1px solid var(--component-button-border);
   }
   
   .divider {
@@ -73,11 +73,11 @@
     display          : block;
     height           : 1px;
     width            : 100%;
-    background-color : var(--border-default);
+    background-color : var(--color-border-default);
   }
   
   a {
-    color : var(--text-link);
+    color : var(--color-text-content-link);
   }
   
   .footer {
@@ -98,7 +98,7 @@
     width            : 380px;
     min-height       : 640px;
     padding          : 1.5rem 1.5rem 4rem;
-    background-color : var(--background-body);
+    background-color : var(--color-background-layer-body);
     border-radius    : 0.5rem;
   }
   
@@ -140,6 +140,6 @@
     place-content    : center;
     background-color : #444444;
     font-family      : 'Open Sans', sans-serif;
-    color            : var(--text-default);
+    color            : var(--color-text-content-default);
   }
 }
