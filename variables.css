@@ -3,27 +3,30 @@
  */
 
 :root {
-  --color-background-brand-default: #0c8ce9;
-  --color-background-brand-hover: #0a7acb;
-  --color-background-layer-element: #323644;
-  --color-background-layer-body: #282a38;
-  --color-background-layer-surface-01-default: #000000;
-  --color-text-content-on-color: #ffffff;
-  --color-text-content-default: #cbcdd0;
-  --color-text-content-prominent: #fefefe;
-  --color-text-content-light: #78818f;
-  --color-text-content-lighter: #747474;
-  --color-text-content-brand: #6fb3ee;
-  --color-text-content-link: #6fb3ee;
-  --color-border-default: #484848;
-  --color-icon-content-prominent: #fefefe;
-  --color-icon-content-brand: #6fb3ee;
-  --color-icon-content-default: #cbcdd0;
-  --color-icon-content-light: #78818f;
-  --color-icon-content-lighter: #747474;
-  --color-icon-content-on-color: #ffffff;
-  --component-button-radius: 0.5rem;
-  --component-button-border: #484848;
-  --component-input-radius: 0.5rem;
-  --component-input-border: #323644;
+  --rds-color-background-element: #323644;
+  --rds-color-background-body: #282a37;
+  --rds-color-background-accent: #139688;
+  --rds-color-background-brand-default: #0c8ce9;
+  --rds-color-background-brand-hover: #2c2c2c;
+  --rds-color-text-default: #cbcdd0;
+  --rds-color-text-light: #78818f;
+  --rds-color-text-lighter: #747474;
+  --rds-color-text-on-color: #ffffff;
+  --rds-color-text-prominent: #fefefe;
+  --rds-color-text-brand: #6eb3ee;
+  --rds-color-text-title: #fefefe;
+  --rds-color-text-link: #6fb3ee;
+  --rds-color-border-default: #484848;
+  --rds-color-border-accent: #139688;
+  --rds-color-icon-default: #cbcdd0;
+  --rds-color-icon-lighter: #747474;
+  --rds-color-icon-light: #78818f;
+  --rds-color-icon-prominent: #fefefe;
+  --rds-color-icon-brand: #6eb3ee;
+  --rds-color-icon-on-color: #ffffff;
+  --rds-button-radius: 0.5rem;
+  --rds-button-color-border: #484848;
+  --rds-input-radius: 0.5rem;
+  --rds-input-color-border: #323644;
+  --rds-input-color-background: #323644;
 }
