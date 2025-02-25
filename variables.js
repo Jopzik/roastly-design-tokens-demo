@@ -2,29 +2,28 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-export const rdsColorBackgroundElement = "#f2f2f2";
+export const rdsColorBackgroundElement = "#ffffff";
 export const rdsColorBackgroundBody = "#ffffff";
-export const rdsColorBackgroundAccent = "#fe9812";
-export const rdsColorBackgroundBrandDefault = "#ffc888";
+export const rdsColorBackgroundBrandDefault = "#2c2c2c";
 export const rdsColorBackgroundBrandHover = "#2c2c2c";
-export const rdsColorTextDefault = "#6d6d6d";
-export const rdsColorTextLight = "#78818f";
+export const rdsColorTextDefault = "#383838";
+export const rdsColorTextLight = "#4a4a4a";
 export const rdsColorTextLighter = "#505050";
-export const rdsColorTextOnColor = "#000000";
-export const rdsColorTextProminent = "#424242";
-export const rdsColorTextBrand = "#ffc888";
-export const rdsColorTextTitle = "#424242";
-export const rdsColorTextLink = "#000000";
+export const rdsColorTextOnColor = "#ffffff";
+export const rdsColorTextProminent = "#000000";
+export const rdsColorTextBrand = "#2c2c2c";
+export const rdsColorTextTitle = "#000000";
+export const rdsColorTextLink = "#235be9";
 export const rdsColorBorderDefault = "#ababab";
-export const rdsColorBorderAccent = "#fe9812";
-export const rdsColorIconDefault = "#6d6d6d";
+export const rdsColorBorderBrand = "#2c2c2c";
+export const rdsColorIconDefault = "#383838";
 export const rdsColorIconLighter = "#505050";
-export const rdsColorIconLight = "#78818f";
-export const rdsColorIconProminent = "#424242";
-export const rdsColorIconBrand = "#ffc888";
+export const rdsColorIconLight = "#4a4a4a";
+export const rdsColorIconProminent = "#000000";
+export const rdsColorIconBrand = "#2c2c2c";
 export const rdsColorIconOnColor = "#ffffff";
-export const rdsButtonRadius = "32px";
+export const rdsButtonRadius = "0px";
 export const rdsButtonColorBorder = "#ababab";
-export const rdsInputRadius = "6px";
-export const rdsInputColorBorder = "#f2f2f2";
-export const rdsInputColorBackground = "#f2f2f2";
+export const rdsInputRadius = "0px";
+export const rdsInputColorBorder = "#ababab";
+export const rdsInputColorBackground = "#ffffff";
