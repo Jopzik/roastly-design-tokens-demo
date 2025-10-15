@@ -3,30 +3,29 @@
  */
 
 :root {
-  --rds-color-background-element: #323644;
-  --rds-color-background-body: #282a37;
-  --rds-color-background-accent: #139688;
-  --rds-color-background-brand-default: #0c8ce9;
+  --rds-color-background-element: #ffffff;
+  --rds-color-background-body: #ffffff;
+  --rds-color-background-brand-default: #2c2c2c;
   --rds-color-background-brand-hover: #2c2c2c;
-  --rds-color-text-default: #cbcdd0;
-  --rds-color-text-light: #78818f;
-  --rds-color-text-lighter: #747474;
+  --rds-color-text-default: #383838;
+  --rds-color-text-light: #4a4a4a;
+  --rds-color-text-lighter: #505050;
   --rds-color-text-on-color: #ffffff;
-  --rds-color-text-prominent: #fefefe;
-  --rds-color-text-brand: #6eb3ee;
-  --rds-color-text-title: #fefefe;
-  --rds-color-text-link: #6fb3ee;
-  --rds-color-border-default: #484848;
-  --rds-color-border-accent: #139688;
-  --rds-color-icon-default: #cbcdd0;
-  --rds-color-icon-lighter: #747474;
-  --rds-color-icon-light: #78818f;
-  --rds-color-icon-prominent: #fefefe;
-  --rds-color-icon-brand: #6eb3ee;
+  --rds-color-text-prominent: #000000;
+  --rds-color-text-brand: #2c2c2c;
+  --rds-color-text-title: #000000;
+  --rds-color-text-link: #235be9;
+  --rds-color-border-default: #ababab;
+  --rds-color-border-brand: #2c2c2c;
+  --rds-color-icon-default: #383838;
+  --rds-color-icon-lighter: #505050;
+  --rds-color-icon-light: #4a4a4a;
+  --rds-color-icon-prominent: #000000;
+  --rds-color-icon-brand: #2c2c2c;
   --rds-color-icon-on-color: #ffffff;
-  --rds-button-radius: 0.5rem;
-  --rds-button-color-border: #484848;
-  --rds-input-radius: 0.5rem;
-  --rds-input-color-border: #323644;
-  --rds-input-color-background: #323644;
+  --rds-button-radius: 0px;
+  --rds-button-color-border: #ababab;
+  --rds-input-radius: 0px;
+  --rds-input-color-border: #ababab;
+  --rds-input-color-background: #ffffff;
 }
